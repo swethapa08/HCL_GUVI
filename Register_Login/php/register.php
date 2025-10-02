@@ -7,7 +7,7 @@
 	$number = $_POST['number'];
 
 	// Database connection
-	$conn = new mysqli('localhost','root','Swetha@m8','guvi_db');
+	$conn = new mysqli('localhost','root','password','dbname');
 	if($conn->connect_error){
 		die("Connection Failed : ". $conn->connect_error);
 	} else {
@@ -19,4 +19,5 @@
 		header("Location: ../login.html");
 		exit();
 	}
+
 ?>
