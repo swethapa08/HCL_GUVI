@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/login.js"></script>
+</head>
+<body>
+    <!-- Animated background circles -->
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+
+    <div class="container">
+        <div class="row col-md-6 col-md-offset-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading text-center">
+                    <h1>Login Form</h1>
+                </div>
+
+                <div class="panel-body">
+                    <form action="php/login.php" method="post" onsubmit="return validateLoginForm()">
+                        <!-- Email -->
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="email" name="email" placeholder="Email" />
+                        </div>
+
+                        <!-- Password -->
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Password" />
+                        </div>
+
+                        <!-- Centered button -->
+                        <div class="form-group text-center" style="text-align: center;">
+                            <input type="submit" class="btn btn-primary" value="Login" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
