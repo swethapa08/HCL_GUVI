@@ -29,8 +29,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Database connection (replace with your details)
         $servername = "localhost";
         $db_username = "root"; // e.g., 'root'
-        $db_password = "Swetha@m8"; // e.g., ''
-        $dbname = "guvi_db"; // e.g., 'your_db'
+        $db_password = "password"; // e.g., ''
+        $dbname = "dbname"; // e.g., 'your_db'
 
         $conn = new mysqli($servername, $db_username, $db_password, $dbname);
         
@@ -75,4 +75,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 } else {
     echo "Invalid request method.";
 }
+
 ?>
